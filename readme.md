@@ -18,10 +18,10 @@
                                                 ██╔╝╚██╗██║██████╔╝╚█████╔╝╚█████╔╝██████╔╝
                                                 ╚═╝░░╚═╝╚═╝╚═════╝░░╚════╝░░╚════╝░╚═════╝░ 
 
-![](https://imgur.com/sQOO955)
-![](https://imgur.com/pJq8DAR)
-![](https://imgur.com/WWLiAPx)
+![](https://i.imgur.com/sQOO955.png)
+![](https://i.imgur.com/pJq8DAR.png)
+![](https://i.imgur.com/WWLiAPx.png)
 
-мой канал (разраба XidoOS) ![](https://www.youtube.com/@matveymayner/featured)
+мой канал (разраба XidoOS) https://www.youtube.com/@matveymayner/featured
 
 а вот ссылка на скачку 𝖃̵͇̝̙̓́𝖎̴̝̠̟̿̐͝𝖉̸͚̟͉͒̈́͛𝖔̵̟͍̒̈́͆𝕺̵̺͇͎̀̓̈́𝕾̵͍͚́͆͠   pastebin run 6rr1pxUp
