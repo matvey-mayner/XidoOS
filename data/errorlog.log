@@ -1,0 +1,26 @@
+application error: /system/core/bootloader.lua:6: attempt to index a nil value (local 'computer')
+stack traceback:
+	machine:819: in metamethod '__index'
+	/system/core/bootloader.lua:6: in main chunk
+	[C]: in function 'xpcall'
+	machine:812: in upvalue 'native_xpcall'
+	/system/core/luaenv/b_os.lua:51: in global 'xpcall'
+	/system/lib/liked.lua:79: in function </system/lib/liked.lua:78>
+global error: not enough memory
+global error: not enough memory
+application error: /system/core/bootloader.lua:6: attempt to index a nil value (local 'computer')
+stack traceback:
+	machine:819: in metamethod '__index'
+	/system/core/bootloader.lua:6: in main chunk
+	[C]: in function 'xpcall'
+	machine:812: in upvalue 'native_xpcall'
+	/system/core/luaenv/b_os.lua:51: in global 'xpcall'
+	/system/lib/liked.lua:79: in function </system/lib/liked.lua:78>
+application error: /system/core/bootloader.lua:6: attempt to index a nil value (local 'computer')
+stack traceback:
+	machine:819: in metamethod '__index'
+	/system/core/bootloader.lua:6: in main chunk
+	[C]: in function 'xpcall'
+	machine:812: in upvalue 'native_xpcall'
+	/system/core/luaenv/b_os.lua:51: in global 'xpcall'
+	/system/lib/liked.lua:79: in function </system/lib/liked.lua:78>
