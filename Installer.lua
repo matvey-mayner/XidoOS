@@ -18,7 +18,7 @@ local function readFunc(alternativeSplast)
     return read:sub(1, #read - 1)
 end
 
-print("вас приветствует мастер создания загрузочьного диска likeOS")
+print("вас приветствует мастер создания загрузочьного диска 𝖃𝖎𝖉𝖔𝕺𝕾")
 print("выберите режим")
 print("1. создать устоновочьный диск")
 print("2. устоновить устоновшик в tmpfs и перезагрузиться туда(tmpfs будет очишенна)")
@@ -31,7 +31,7 @@ local function installTo(address, auto, offlineMode)
     local proxy = component.proxy(address)
 
     if not auto then
-        print("вы уверены сделать диск " .. address:sub(1, 4) .. ":" .. (component.invoke(address, "getLabel") or "") .. " устоновочьным диском likeOS?")
+        print("вы уверены сделать диск " .. address:sub(1, 4) .. ":" .. (component.invoke(address, "getLabel") or "") .. " устоновочьным диском 𝖃𝖎𝖉𝖔𝕺𝕾?")
         print("ВСЕ ДАННЫЕ С ДИСКА БУДУТ УДАЛЕНЫ")
 
         local ok = readFunc()
@@ -45,7 +45,7 @@ local function installTo(address, auto, offlineMode)
     fs.mount(proxy, mountPath)
 
     proxy.remove("/")
-    pcall(proxy.setLabel, "likeOS installer")
+    pcall(proxy.setLabel, "𝖃𝖎𝖉𝖔𝕺𝕾 installer")
 
     ------------------------------------
 
@@ -89,10 +89,10 @@ local function installTo(address, auto, offlineMode)
         return parts
     end
 
-    local url = "https://raw.githubusercontent.com/igorkll/likeOS/main"
+    local url = "https://raw.githubusercontent.com/matvey-mayner/XidoOS/main"
 
     if offlineMode then
-        local filelist = split(assert(getInternetFile(url .. "/installer/filelist.txt")), "\n")
+        local filelist = split(assert(getInternetFile(url .. "/filelist.txt")), "\n")
 
         for i, path in ipairs(filelist) do
             if path ~= "" then
@@ -112,18 +112,18 @@ local function installTo(address, auto, offlineMode)
     end
 
     local file = io.open(fs.concat(mountPath, "init.lua"), "wb")
-    file:write(assert(getInternetFile(url .. "/installer/maininstaller.lua")))
+    file:write(assert(getInternetFile(url .. "/maininstaller.lua")))
     file:close()
 
     local file = io.open(fs.concat(mountPath, ".install"), "wb")
-    file:write(assert(getInternetFile(url .. "/installer/oschanger.lua")))
+    file:write(assert(getInternetFile(url .. "/oschanger.lua")))
     file:close()
 
     -----------------------------------------------------------------------------
 
     if offlineMode then
         local function downloadDistribution(url, folder)
-            local filelist = split(assert(getInternetFile(url .. "/installer/filelist.txt")), "\n")
+            local filelist = split(assert(getInternetFile(url .. "/filelist.txt")), "\n")
 
             for i, path in ipairs(filelist) do
                 if path ~= "" then
@@ -139,7 +139,7 @@ local function installTo(address, auto, offlineMode)
             end
         end
 
-        local filelist = split(assert(getInternetFile("https://raw.githubusercontent.com/igorkll/likeOS/main/installer/list.txt")), "\n")
+        local filelist = split(assert(getInternetFile("https://raw.githubusercontent.com/matvey-mayner/XidoOS/main/list.txt")), "\n")
         for i, v in ipairs(filelist) do
             if v ~= "" then
                 downloadDistribution(table.unpack(split(v, ";")))
